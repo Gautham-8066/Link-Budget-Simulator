@@ -16,12 +16,12 @@ In satellite communications, the **Link Budget** is a critical calculation that 
 ### 1. Geometry: Slant Range
 The simulator calculates the direct distance ($d$) between the Ground Station and the Satellite using the Pythagorean theorem for each time step:
 $$d = \sqrt{x^2 + h^2}$$
-*where $x$ is ground distance and $h$ is altitude.*
+*where x is ground distance and h is altitude.*
 
 ### 2. Physics: Free Space Path Loss (FSPL)
 The core signal degradation is modeled using the FSPL equation:
 $$FSPL (dB) = 20 \log_{10}(d) + 20 \log_{10}(f) + 20 \log_{10}\left(\frac{4\pi}{c}\right)$$
-*where $f$ is frequency (437 MHz) and $c$ is the speed of light.*
+*where f is frequency (437 MHz) and c is the speed of light.*
 
 ### 3. Link Budget Logic
 The received power is determined by:
